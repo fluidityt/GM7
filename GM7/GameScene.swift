@@ -1,89 +1,146 @@
 //
 //  GameScene.swift
 //  GM7
-//
-//  Created by justin fluidity on 3/13/17.
-//  Copyright © 2017 justin fluidity. All rights reserved.
-//
 
 import SpriteKit
-import GameplayKit
+
+let void: () = Void()
+
+enum Modes { case swap };
+
+enum sizes {
+  
+  static  let
+  prompt = CGSize(width:  50, height: 25),
+  choice = CGSize(width: 200, height: 15)
+  
+  static func stretchedSize(numChildren: Int) -> CGSize {
+    return CGSize(width: prompt.width, height: choice.height * 5.6)
+  }
+};
+
+enum sys {
+  
+  static var
+  igeCounter    = 0,
+  currentNode:  IGE?,                    // NP
+  collided:     IGE?,
+  
+  isTouching: Bool = false
+  
+};
+
+typealias CheckCollisions = Bool
+
+typealias Succeeded = Bool
+
+//
+// MARK: - DMV:
+//
 
 class GameScene: SKScene {
-    
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
-    
-    override func didMove(to view: SKView) {
-        
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
-    }
-    
-    
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-    }
+  override func didMove(to view: SKView) {
+    let zip = Prompt(title: "Hey")
+    print(zip.name!)
+  }
+
 }
+
+//
+// MARK: - Touches:
+//
+extension GameScene {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+  }
+}
+
+//
+// MARK: - Update:
+//
+extension GameScene {
+  override func update(_ currentTime: TimeInterval) {
+    
+  }
+}
+//
+// MARK: - Funcs:
+//
+extension GameScene {
+  
+  func swapChoices(choice1: Choice, choice2: Choice) {
+    print("swapping choices")
+    
+    let funTuple = (choice1.color, choice1.name!)
+    
+    // Find parents:
+    let c1mom = choice1.mother!
+    let c2mom = choice2.mother!
+    // remove one child
+    cm.removeKid(choice1, from: c1mom)
+    
+    
+    //    cm.addKid(choice1, to: c2mom)
+    
+    /*
+     // Swap one:
+     choice1.color = choice2.color
+     choice1.name  = choice2.name!
+     */
+    print("list of children:"); print(c2mom.childs)
+    
+    /*let tempColor = choice1.color
+     
+     choice1.color = choice2.color
+     choice2.color = tempColor
+     */
+    // FIXME: determine which one is further left
+    //align(choice2)
+  }
+  
+  
+  func doCollision(with curNode:  IGE,
+                   against collidedNode:  IGE) {
+    print("doing collisions...")
+    // Should probably use multi-switch here...
+    // FIXME: Will need to determine which one is closest for multi-hits
+    // Determine if hit node is a prompt or choice:
+    if let prompt = collidedNode as? Prompt {
+      // ...
+      _=prompt
+    }
+    else if let collidedChoice = collidedNode as? Choice {
+      if let curChoice = curNode as? Choice {
+        swapChoices(choice1: curChoice, choice2: collidedChoice)
+      }
+    }
+    sys.collided = nil // FIXME: not sure if this works
+  }
+  
+  
+  func checkCollisions() {
+    
+    guard let currentNode = sys.currentNode else {
+      print("checkCollision: curNode was nil!")
+      return
+    }
+    
+    for child in children {
+      if child.name == "bkg" { continue }
+      if child.name == sys.currentNode!.name { continue }
+      
+      
+      if currentNode.frame.intersects(child.frame) {
+        print("hit detected")
+        // FIXME: should be IGE
+        if let collidedChoice = child as? Choice {
+          sys.collided = collidedChoice
+        }
+      }
+      
+    }
+    // Base case:
+  }
+}
+
+
