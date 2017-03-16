@@ -21,14 +21,11 @@ class ParentingTest: XCTestCase {
     choice1 = Choice(title: "C1")
     prompt2 = Prompt(title: "P2")
     choice2 = Choice(title: "C2")
-    
-    
   }
   
   override func tearDown() {
     dbg("next test")
     newLine()
-    
   }
   
   func testAddChildren() {
