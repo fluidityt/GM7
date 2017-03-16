@@ -1,5 +1,7 @@
 //
-import SpriteKit
+// Prompt.swift
+
+import SpriteKit.SKSpriteNode
 
 class Prompt: IGE {
   
@@ -7,11 +9,11 @@ class Prompt: IGE {
   var kids: [Choice] = []
   
   func addKid(choice: Choice,_ index: Int = -50) {
-  
+    
     guard choice !== mother      else { say("ak: can't add mother as kid"); return }
     guard choice !== self        else { say("ak: can't add self as kid")  ; return }
-    guard !kids.contains(choice) else { say("ak: already have choice")    ; return }
-
+    guard !kids.contains(choice) else { say("ak: already have that kid")  ; return }
+    
     choice.mother = self
     
     if index == -50 { kids.append(choice) }
@@ -20,7 +22,7 @@ class Prompt: IGE {
   
   func removeKid(choice: Choice) {
     guard kids.contains(choice) else { say("rk: choice not found"); return }
-      choice.mother = nil
+    choice.mother = nil
     if let found = kids.index(of:choice) { kids.remove(at:found) }
     else { say("rk: issue with index") }
   }
@@ -53,6 +55,21 @@ class Prompt: IGE {
     p2mom.removeKid()
     p2mom.addKid(prompt: prompt1)
     p1mom.addKid(prompt: prompt2)
+  }
+  
+  func duplicate() -> Prompt {
+    let dupPrompt = Prompt(title: "copy of \(self.name!))")
+    
+    return dupPrompt
+  }
+  
+  func draw(from index: Int = 0) -> Succeeded {
+    guard kids.count > 0            else { say("draw: no kids");        return false }
+    guard (index + 1) <= kids.count else { say("draw: index OOR");      return false }
+    guard index >= 0                else { say("draw: negative index"); return false }
+
+    /* do drawing stuff */
+    return true
   }
 }
 

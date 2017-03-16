@@ -11,3 +11,5 @@ import Foundation
 func newLine() {     print("\n") }
 func dbg(_ string: String) { print("dbg:",string) }
 func dbg(_ any: Any) { print("dbg:", any) }
+
+typealias Succeeded = Bool

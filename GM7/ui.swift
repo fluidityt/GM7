@@ -7,7 +7,7 @@
 //
 
 import SpriteKit
-
+/*
 enum ui {
   
   static func align(_ choice: Choice) {
@@ -44,3 +44,4 @@ enum ui {
     sys.frames[igecd.name!] = igecd.frame
   }
 }
+*/

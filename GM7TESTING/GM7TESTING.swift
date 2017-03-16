@@ -79,4 +79,21 @@ class ParentingTest: XCTestCase {
     XCTAssert(choice2.kid === prompt1)
   }
   
+  func testPromptDrawIndex() {
+    XCTAssert(prompt1.draw() == false)
+    XCTAssert(prompt1.draw(from: -1) == false)
+    XCTAssert(prompt1.draw(from:  0) == false)
+    XCTAssert(prompt1.draw(from:  1) == false)
+    
+    prompt1.addKid(choice: choice1)
+    XCTAssert(prompt1.draw() == true)
+    XCTAssert(prompt1.draw(from: -1) == false)
+    XCTAssert(prompt1.draw(from:  0) == true)
+    XCTAssert(prompt1.draw(from:  1) == false)
+    
+    prompt1.addKid(choice: choice2)
+    XCTAssert(prompt1.draw() == true)
+    XCTAssert(prompt1.draw(from:  1) == true)
+  }
+  
 }

@@ -27,10 +27,18 @@
 		4D78288C1E77625C006C34F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288A1E77625C006C34F6 /* Main.storyboard */; };
 		4D78288E1E77625C006C34F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288D1E77625C006C34F6 /* Assets.xcassets */; };
 		4D7828911E77625C006C34F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288F1E77625C006C34F6 /* LaunchScreen.storyboard */; };
-		4D78289A1E77629D006C34F6 /* classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828991E77629D006C34F6 /* classes.swift */; };
 		4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289B1E7762A6006C34F6 /* handleTouch.swift */; };
 		4D78289E1E776539006C34F6 /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289D1E776539006C34F6 /* ui.swift */; };
 		4D7828A01E77655B006C34F6 /* cm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289F1E77655B006C34F6 /* cm.swift */; };
+		4D95CF661E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
+		4D95CF671E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
+		4D95CF681E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
+		4DFA2BF91E7A30AE0071A8B8 /* setupd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */; };
+		4DFA2BFA1E7A31980071A8B8 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A41E79E7BA00CE9451 /* IGE.swift */; };
+		4DFA2BFB1E7A319C0071A8B8 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */; };
+		4DFA2BFC1E7A319F0071A8B8 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59C1E79DDB900CE9451 /* Choice.swift */; };
+		4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
+		4DFA2BFE1E7A31A50071A8B8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59E1E79E37D00CE9451 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,11 +74,12 @@
 		4D78288D1E77625C006C34F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D7828901E77625C006C34F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D7828921E77625C006C34F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D7828991E77629D006C34F6 /* classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classes.swift; sourceTree = "<group>"; };
 		4D78289B1E7762A6006C34F6 /* handleTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handleTouch.swift; sourceTree = "<group>"; };
 		4D78289D1E776539006C34F6 /* ui.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
 		4D78289F1E77655B006C34F6 /* cm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cm.swift; sourceTree = "<group>"; };
 		4D7828A11E776B0F006C34F6 /* GM7PG.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GM7PG.playground; sourceTree = "<group>"; };
+		4D95CF651E7AF17D00EB5A0E /* Super.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Super.swift; sourceTree = "<group>"; };
+		4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setupd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 				4D5FE5891E79DCD800CE9451 /* main.swift */,
 				4D5FE5A41E79E7BA00CE9451 /* IGE.swift */,
 				4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */,
+				4D95CF651E7AF17D00EB5A0E /* Super.swift */,
 				4D5FE59C1E79DDB900CE9451 /* Choice.swift */,
 				4D5FE5A71E79E7D300CE9451 /* Utility.swift */,
 				4D5FE59E1E79E37D00CE9451 /* Button.swift */,
@@ -146,7 +156,7 @@
 				4D7828A11E776B0F006C34F6 /* GM7PG.playground */,
 				4D7828981E776290006C34F6 /* junk */,
 				4D7828861E77625C006C34F6 /* GameScene.swift */,
-				4D7828991E77629D006C34F6 /* classes.swift */,
+				4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */,
 				4D78289D1E776539006C34F6 /* ui.swift */,
 				4D78289F1E77655B006C34F6 /* cm.swift */,
 				4D78289B1E7762A6006C34F6 /* handleTouch.swift */,
@@ -299,6 +309,7 @@
 				4D5FE5A81E79E7D300CE9451 /* Utility.swift in Sources */,
 				4D5FE59B1E79DD8A00CE9451 /* Prompt.swift in Sources */,
 				4D5FE5A51E79E7BA00CE9451 /* IGE.swift in Sources */,
+				4D95CF671E7AF17D00EB5A0E /* Super.swift in Sources */,
 				4D5FE59F1E79E37D00CE9451 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +323,7 @@
 				4D5FE5A91E79E7D300CE9451 /* Utility.swift in Sources */,
 				4D5FE5951E79DCF800CE9451 /* GM7TESTING.swift in Sources */,
 				4D5FE5A61E79E7BA00CE9451 /* IGE.swift in Sources */,
+				4D95CF681E7AF17D00EB5A0E /* Super.swift in Sources */,
 				4D5FE5A01E79E5C500CE9451 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,11 +333,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */,
+				4DFA2BFA1E7A31980071A8B8 /* IGE.swift in Sources */,
 				4D7828A01E77655B006C34F6 /* cm.swift in Sources */,
+				4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */,
 				4D78289E1E776539006C34F6 /* ui.swift in Sources */,
 				4D7828871E77625C006C34F6 /* GameScene.swift in Sources */,
+				4D95CF661E7AF17D00EB5A0E /* Super.swift in Sources */,
+				4DFA2BF91E7A30AE0071A8B8 /* setupd.swift in Sources */,
+				4DFA2BFE1E7A31A50071A8B8 /* Button.swift in Sources */,
+				4DFA2BFC1E7A319F0071A8B8 /* Choice.swift in Sources */,
 				4D7828891E77625C006C34F6 /* GameViewController.swift in Sources */,
-				4D78289A1E77629D006C34F6 /* classes.swift in Sources */,
+				4DFA2BFB1E7A319C0071A8B8 /* Prompt.swift in Sources */,
 				4D7828811E77625C006C34F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +551,7 @@
 				4D5FE58C1E79DCD800CE9451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D5FE5971E79DCF800CE9451 /* Build configuration list for PBXNativeTarget "GM7TESTING" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +560,7 @@
 				4D5FE5991E79DCF800CE9451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D7828781E77625C006C34F6 /* Build configuration list for PBXProject "GM7" */ = {
 			isa = XCConfigurationList;

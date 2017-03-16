@@ -1,8 +1,7 @@
 //
 //  Choice.swift
-//  GM7
 
-import SpriteKit
+import SpriteKit.SKSpriteNode
 
 class Choice: IGE {
   
@@ -55,6 +54,8 @@ class Choice: IGE {
   }
   
   func duplicate() -> Choice {
-    return Choice(title: "return")
+    let dupChoice = Choice(title: "copy of \(self.name!))")
+    
+    return dupChoice
   }
 }

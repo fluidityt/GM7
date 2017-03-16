@@ -6,7 +6,7 @@
 //  TouchTypes.swift
 
 import SpriteKit
-
+/*
 extension GameScene {
   
   func handleTouch(riskyTouch: Touch) -> CheckCollisions {
@@ -79,3 +79,4 @@ extension GameScene {
     }
   }
 }
+ */
