@@ -70,4 +70,16 @@ class ParentingTest: XCTestCase {
     XCTAssert(prompt1.kids.contains(choice2))
     XCTAssert(prompt2.kids.contains(choice1))
   }
+  
+  func testSwapPrompt(){
+    choice1.addKid(prompt: prompt1)
+    choice2.addKid(prompt: prompt2)
+    
+    Prompt.swapPrompt(prompt1: prompt1, with: prompt2)
+    XCTAssert(prompt1.mother === choice2)
+    XCTAssert(prompt2.mother === choice1)
+    XCTAssert(choice1.kid === prompt2)
+    XCTAssert(choice2.kid === prompt1)
+  }
+  
 }

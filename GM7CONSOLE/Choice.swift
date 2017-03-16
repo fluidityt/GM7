@@ -11,8 +11,8 @@ class Choice: IGE {
   
   func addKid(prompt: Prompt) {
     guard prompt !== mother else { say("ak: can't add mother as kid"); return }
-    guard prompt !== self else { say("ak: can't add self as kid"); return }
-    guard kid == nil else { say("ak: already have prompt"); return }
+    guard prompt !== self   else { say("ak: can't add self as kid")  ; return }
+    guard kid == nil        else { say("ak: already have prompt")    ; return }
     
     prompt.mother = self
     kid = prompt
@@ -54,4 +54,7 @@ class Choice: IGE {
     c2Mom.addKid(choice: choice1)
   }
   
+  func duplicate() -> Choice {
+    return Choice(title: "return")
+  }
 }

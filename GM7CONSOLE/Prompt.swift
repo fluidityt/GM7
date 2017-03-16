@@ -1,3 +1,4 @@
+//
 import SpriteKit
 
 class Prompt: IGE {
@@ -7,9 +8,9 @@ class Prompt: IGE {
   
   func addKid(choice: Choice,_ index: Int = -50) {
   
-    guard choice !== mother else { say("ak: can't add mother as kid"); return }
-    guard choice !== self else { say("ak: can't add self as kid"); return }
-    guard !kids.contains(choice) else { say("ak: already have choice"); return }
+    guard choice !== mother      else { say("ak: can't add mother as kid"); return }
+    guard choice !== self        else { say("ak: can't add self as kid")  ; return }
+    guard !kids.contains(choice) else { say("ak: already have choice")    ; return }
 
     choice.mother = self
     
@@ -41,6 +42,17 @@ class Prompt: IGE {
       printKids()
     }
     newLine()
+  }
+  
+  static func swapPrompt(prompt1: Prompt, with prompt2: Prompt) {
+    guard prompt1 !== prompt2        else { dbg("swapPrompt: p1 == p2");      return }
+    guard let p1mom = prompt1.mother else { dbg("swapPrompt: p1 has no mom"); return }
+    guard let p2mom = prompt2.mother else { dbg("swapPrompt: p2 has no mom"); return }
+    
+    p1mom.removeKid()
+    p2mom.removeKid()
+    p2mom.addKid(prompt: prompt1)
+    p1mom.addKid(prompt: prompt2)
   }
 }
 
