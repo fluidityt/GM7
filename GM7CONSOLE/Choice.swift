@@ -42,4 +42,16 @@ class Choice: IGE {
     }
     newLine()
   }
+
+  static func swapChoices(choice1: Choice, with choice2: Choice) {
+    guard choice1 !== choice2        else { dbg("swapChoices: c1 == c2")     ; return }
+    guard let c1Mom = choice1.mother else { dbg("swapChoices: c1 has no mom"); return }
+    guard let c2Mom = choice2.mother else { dbg("swapChoices: c2 has no mom"); return }
+
+    c1Mom.removeKid(choice: choice1)
+    c2Mom.removeKid(choice: choice2)
+    c1Mom.addKid(choice: choice2)
+    c2Mom.addKid(choice: choice1)
+  }
+  
 }

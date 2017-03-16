@@ -1,10 +1,5 @@
 //
 //  GM7TESTING.swift
-//  GM7TESTING
-//
-//  Created by justin fluidity on 3/15/17.
-//  Copyright © 2017 justin fluidity. All rights reserved.
-//
 
 import XCTest
 
@@ -12,6 +7,7 @@ class ParentingTest: XCTestCase {
   
   var
   superPrompt = Prompt(title: "Super"),
+  prompt1 = Prompt(title: "P1"),
   choice1 = Choice(title: "C1"),
   prompt2 = Prompt(title: "P2"),
   choice2 = Choice(title: "C2")
@@ -21,6 +17,7 @@ class ParentingTest: XCTestCase {
     dbg("new test")
     newLine()
     superPrompt = Prompt(title: "Super")
+    prompt1 = Prompt(title: "P1")
     choice1 = Choice(title: "C1")
     prompt2 = Prompt(title: "P2")
     choice2 = Choice(title: "C2")
@@ -34,16 +31,21 @@ class ParentingTest: XCTestCase {
     
   }
   
-  func testAddChildrenPrompt() {
+  func testAddChildren() {
     superPrompt.addKid(choice: choice1)
     XCTAssert(superPrompt.kids.contains(choice1))
     XCTAssert(choice1.mother === superPrompt)
-  }
-  
-  func testAddChildrenChoice() {
+
     choice1.addKid(prompt: prompt2)
     XCTAssert(choice1.kid === prompt2)
     XCTAssert(prompt2.mother === choice1)
+  }
+  
+  func testAddChildrenAtIndexPrompt() {
+    superPrompt.addKid(choice: choice1)
+    superPrompt.addKid(choice: choice2, 0)
+    XCTAssert(superPrompt.kids[0] == choice2)
+    XCTAssert(superPrompt.kids[1] == choice1)
   }
   
   func testRemoveChildren() {
@@ -56,5 +58,16 @@ class ParentingTest: XCTestCase {
     choice1.removeKid()
     XCTAssert(choice1.kid == nil)
     XCTAssert(prompt2.mother == nil)
+  }
+  
+  func testSwapChoice(){
+    prompt1.addKid(choice: choice1)
+    prompt2.addKid(choice: choice2)
+    
+    Choice.swapChoices(choice1: choice1, with: choice2)
+    XCTAssert(choice1.mother === prompt2)
+    XCTAssert(choice2.mother === prompt1)
+    XCTAssert(prompt1.kids.contains(choice2))
+    XCTAssert(prompt2.kids.contains(choice1))
   }
 }

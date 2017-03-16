@@ -6,8 +6,7 @@ class Prompt: IGE {
   var kids: [Choice] = []
   
   func addKid(choice: Choice,_ index: Int = -50) {
-    
-    
+  
     guard choice !== mother else { say("ak: can't add mother as kid"); return }
     guard choice !== self else { say("ak: can't add self as kid"); return }
     guard !kids.contains(choice) else { say("ak: already have choice"); return }
@@ -22,6 +21,7 @@ class Prompt: IGE {
     guard kids.contains(choice) else { say("rk: choice not found"); return }
       choice.mother = nil
     if let found = kids.index(of:choice) { kids.remove(at:found) }
+    else { say("rk: issue with index") }
   }
   
   func printKids() {
