@@ -23,7 +23,22 @@ class IGE: SKSpriteNode {
   
   init(title: String) {
     super.init(texture: nil, color: .white, size: CGSize.zero)
-    self.name = title
+    
+    name = title
+    isUserInteractionEnabled = true
+    
+    let thisType = String(describing: type(of: self))
+    // Test these APs:
+    if      thisType.contains("Prompt") {
+      size        = sizes.prompt
+      anchorPoint = CGPoint(x: 1, y: 0)
+    }
+    else if thisType.contains("Choice") {
+      size        = sizes.choice
+      anchorPoint = CGPoint.zero
+    }
+    
+    sys.scene.addChild(self)
   }
   required init?(coder aDecoder: NSCoder) { fatalError() }
   

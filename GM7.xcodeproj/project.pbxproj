@@ -7,16 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D5FE58A1E79DCD800CE9451 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5891E79DCD800CE9451 /* main.swift */; };
 		4D5FE5951E79DCF800CE9451 /* GM7TESTING.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */; };
-		4D5FE59B1E79DD8A00CE9451 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */; };
-		4D5FE59D1E79DDB900CE9451 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59C1E79DDB900CE9451 /* Choice.swift */; };
-		4D5FE59F1E79E37D00CE9451 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59E1E79E37D00CE9451 /* Button.swift */; };
-		4D5FE5A01E79E5C500CE9451 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59E1E79E37D00CE9451 /* Button.swift */; };
-		4D5FE5A21E79E5CB00CE9451 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59C1E79DDB900CE9451 /* Choice.swift */; };
-		4D5FE5A31E79E5CF00CE9451 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */; };
-		4D5FE5A51E79E7BA00CE9451 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A41E79E7BA00CE9451 /* IGE.swift */; };
-		4D5FE5A61E79E7BA00CE9451 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A41E79E7BA00CE9451 /* IGE.swift */; };
 		4D5FE5A81E79E7D300CE9451 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
 		4D5FE5A91E79E7D300CE9451 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
 		4D7828811E77625C006C34F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828801E77625C006C34F6 /* AppDelegate.swift */; };
@@ -29,16 +20,26 @@
 		4D7828911E77625C006C34F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288F1E77625C006C34F6 /* LaunchScreen.storyboard */; };
 		4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289B1E7762A6006C34F6 /* handleTouch.swift */; };
 		4D78289E1E776539006C34F6 /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289D1E776539006C34F6 /* ui.swift */; };
-		4D7828A01E77655B006C34F6 /* cm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289F1E77655B006C34F6 /* cm.swift */; };
-		4D95CF661E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
-		4D95CF671E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
-		4D95CF681E7AF17D00EB5A0E /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95CF651E7AF17D00EB5A0E /* Super.swift */; };
-		4DFA2BF91E7A30AE0071A8B8 /* setupd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */; };
-		4DFA2BFA1E7A31980071A8B8 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A41E79E7BA00CE9451 /* IGE.swift */; };
-		4DFA2BFB1E7A319C0071A8B8 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */; };
-		4DFA2BFC1E7A319F0071A8B8 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59C1E79DDB900CE9451 /* Choice.swift */; };
+		4D95CF691E7B194000EB5A0E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
+		4D95CF6A1E7B194100EB5A0E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
+		4DEF6E491E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
+		4DEF6E4A1E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
+		4DEF6E4B1E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
+		4DEF6E4C1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
+		4DEF6E4D1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
+		4DEF6E4E1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
+		4DEF6E4F1E7B1B5F005E30A3 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
+		4DEF6E501E7B1B5F005E30A3 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
+		4DEF6E511E7B1B5F005E30A3 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
+		4DEF6E531E7B1B5F005E30A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E451E7B1B5F005E30A3 /* main.swift */; };
+		4DEF6E541E7B1B5F005E30A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E451E7B1B5F005E30A3 /* main.swift */; };
+		4DEF6E551E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
+		4DEF6E561E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
+		4DEF6E571E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
+		4DEF6E581E7B1B5F005E30A3 /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E471E7B1B5F005E30A3 /* Super.swift */; };
+		4DEF6E591E7B1B5F005E30A3 /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E471E7B1B5F005E30A3 /* Super.swift */; };
+		4DEF6E5A1E7B1B5F005E30A3 /* Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E471E7B1B5F005E30A3 /* Super.swift */; };
 		4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
-		4DFA2BFE1E7A31A50071A8B8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE59E1E79E37D00CE9451 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,15 +56,10 @@
 
 /* Begin PBXFileReference section */
 		4D5FE5871E79DCD800CE9451 /* GM7CONSOLE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GM7CONSOLE; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FE5891E79DCD800CE9451 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		4D5FE5921E79DCF800CE9451 /* GM7TESTING.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GM7TESTING.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GM7TESTING.swift; sourceTree = "<group>"; };
 		4D5FE5961E79DCF800CE9451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
-		4D5FE59C1E79DDB900CE9451 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
-		4D5FE59E1E79E37D00CE9451 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; wrapsLines = 1; };
-		4D5FE5A41E79E7BA00CE9451 /* IGE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGE.swift; sourceTree = "<group>"; };
-		4D5FE5A71E79E7D300CE9451 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4D5FE5A71E79E7D300CE9451 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = GM7CONSOLE/Utility.swift; sourceTree = SOURCE_ROOT; };
 		4D78287D1E77625C006C34F6 /* GM7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GM7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7828801E77625C006C34F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7828821E77625C006C34F6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -76,10 +72,12 @@
 		4D7828921E77625C006C34F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D78289B1E7762A6006C34F6 /* handleTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handleTouch.swift; sourceTree = "<group>"; };
 		4D78289D1E776539006C34F6 /* ui.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
-		4D78289F1E77655B006C34F6 /* cm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cm.swift; sourceTree = "<group>"; };
-		4D7828A11E776B0F006C34F6 /* GM7PG.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GM7PG.playground; sourceTree = "<group>"; };
-		4D95CF651E7AF17D00EB5A0E /* Super.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Super.swift; sourceTree = "<group>"; };
-		4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setupd.swift; sourceTree = "<group>"; };
+		4DEF6E421E7B1B5F005E30A3 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4DEF6E431E7B1B5F005E30A3 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		4DEF6E441E7B1B5F005E30A3 /* IGE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGE.swift; sourceTree = "<group>"; };
+		4DEF6E451E7B1B5F005E30A3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		4DEF6E471E7B1B5F005E30A3 /* Super.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Super.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +108,13 @@
 		4D5FE5881E79DCD800CE9451 /* GM7CONSOLE */ = {
 			isa = PBXGroup;
 			children = (
-				4D5FE5891E79DCD800CE9451 /* main.swift */,
-				4D5FE5A41E79E7BA00CE9451 /* IGE.swift */,
-				4D5FE59A1E79DD8A00CE9451 /* Prompt.swift */,
-				4D95CF651E7AF17D00EB5A0E /* Super.swift */,
-				4D5FE59C1E79DDB900CE9451 /* Choice.swift */,
 				4D5FE5A71E79E7D300CE9451 /* Utility.swift */,
-				4D5FE59E1E79E37D00CE9451 /* Button.swift */,
+				4DEF6E421E7B1B5F005E30A3 /* Button.swift */,
+				4DEF6E431E7B1B5F005E30A3 /* Choice.swift */,
+				4DEF6E441E7B1B5F005E30A3 /* IGE.swift */,
+				4DEF6E451E7B1B5F005E30A3 /* main.swift */,
+				4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */,
+				4DEF6E471E7B1B5F005E30A3 /* Super.swift */,
 			);
 			path = GM7CONSOLE;
 			sourceTree = "<group>";
@@ -153,12 +151,9 @@
 		4D78287F1E77625C006C34F6 /* GM7 */ = {
 			isa = PBXGroup;
 			children = (
-				4D7828A11E776B0F006C34F6 /* GM7PG.playground */,
 				4D7828981E776290006C34F6 /* junk */,
 				4D7828861E77625C006C34F6 /* GameScene.swift */,
-				4DFA2BF81E7A30AE0071A8B8 /* setupd.swift */,
 				4D78289D1E776539006C34F6 /* ui.swift */,
-				4D78289F1E77655B006C34F6 /* cm.swift */,
 				4D78289B1E7762A6006C34F6 /* handleTouch.swift */,
 			);
 			path = GM7;
@@ -304,13 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FE59D1E79DDB900CE9451 /* Choice.swift in Sources */,
-				4D5FE58A1E79DCD800CE9451 /* main.swift in Sources */,
+				4D95CF691E7B194000EB5A0E /* GameScene.swift in Sources */,
+				4DEF6E591E7B1B5F005E30A3 /* Super.swift in Sources */,
+				4DEF6E561E7B1B5F005E30A3 /* Prompt.swift in Sources */,
+				4DEF6E531E7B1B5F005E30A3 /* main.swift in Sources */,
+				4DEF6E501E7B1B5F005E30A3 /* IGE.swift in Sources */,
+				4DEF6E4D1E7B1B5F005E30A3 /* Choice.swift in Sources */,
 				4D5FE5A81E79E7D300CE9451 /* Utility.swift in Sources */,
-				4D5FE59B1E79DD8A00CE9451 /* Prompt.swift in Sources */,
-				4D5FE5A51E79E7BA00CE9451 /* IGE.swift in Sources */,
-				4D95CF671E7AF17D00EB5A0E /* Super.swift in Sources */,
-				4D5FE59F1E79E37D00CE9451 /* Button.swift in Sources */,
+				4DEF6E4A1E7B1B5F005E30A3 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,13 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FE5A21E79E5CB00CE9451 /* Choice.swift in Sources */,
-				4D5FE5A31E79E5CF00CE9451 /* Prompt.swift in Sources */,
+				4D95CF6A1E7B194100EB5A0E /* GameScene.swift in Sources */,
+				4DEF6E5A1E7B1B5F005E30A3 /* Super.swift in Sources */,
+				4DEF6E571E7B1B5F005E30A3 /* Prompt.swift in Sources */,
+				4DEF6E541E7B1B5F005E30A3 /* main.swift in Sources */,
+				4DEF6E511E7B1B5F005E30A3 /* IGE.swift in Sources */,
+				4DEF6E4E1E7B1B5F005E30A3 /* Choice.swift in Sources */,
 				4D5FE5A91E79E7D300CE9451 /* Utility.swift in Sources */,
 				4D5FE5951E79DCF800CE9451 /* GM7TESTING.swift in Sources */,
-				4D5FE5A61E79E7BA00CE9451 /* IGE.swift in Sources */,
-				4D95CF681E7AF17D00EB5A0E /* Super.swift in Sources */,
-				4D5FE5A01E79E5C500CE9451 /* Button.swift in Sources */,
+				4DEF6E4B1E7B1B5F005E30A3 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,18 +330,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEF6E551E7B1B5F005E30A3 /* Prompt.swift in Sources */,
+				4DEF6E4F1E7B1B5F005E30A3 /* IGE.swift in Sources */,
 				4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */,
-				4DFA2BFA1E7A31980071A8B8 /* IGE.swift in Sources */,
-				4D7828A01E77655B006C34F6 /* cm.swift in Sources */,
+				4DEF6E581E7B1B5F005E30A3 /* Super.swift in Sources */,
 				4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */,
 				4D78289E1E776539006C34F6 /* ui.swift in Sources */,
 				4D7828871E77625C006C34F6 /* GameScene.swift in Sources */,
-				4D95CF661E7AF17D00EB5A0E /* Super.swift in Sources */,
-				4DFA2BF91E7A30AE0071A8B8 /* setupd.swift in Sources */,
-				4DFA2BFE1E7A31A50071A8B8 /* Button.swift in Sources */,
-				4DFA2BFC1E7A319F0071A8B8 /* Choice.swift in Sources */,
+				4DEF6E4C1E7B1B5F005E30A3 /* Choice.swift in Sources */,
 				4D7828891E77625C006C34F6 /* GameViewController.swift in Sources */,
-				4DFA2BFB1E7A319C0071A8B8 /* Prompt.swift in Sources */,
+				4DEF6E491E7B1B5F005E30A3 /* Button.swift in Sources */,
 				4D7828811E77625C006C34F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

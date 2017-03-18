@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D5FE5911E79DCF800CE9451"
+               BuildableName = "GM7TESTING.xctest"
+               BlueprintName = "GM7TESTING"
+               ReferencedContainer = "container:GM7.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -22,23 +38,6 @@
                BlueprintName = "GM7TESTING"
                ReferencedContainer = "container:GM7.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ParentingTest/testAddChildren()">
-               </Test>
-               <Test
-                  Identifier = "ParentingTest/testAddChildrenAtIndexPrompt()">
-               </Test>
-               <Test
-                  Identifier = "ParentingTest/testRemoveChildren()">
-               </Test>
-               <Test
-                  Identifier = "ParentingTest/testSwapChoice()">
-               </Test>
-               <Test
-                  Identifier = "ParentingTest/testSwapPrompt()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <AdditionalOptions>
@@ -54,6 +53,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4D5FE5911E79DCF800CE9451"
+            BuildableName = "GM7TESTING.xctest"
+            BlueprintName = "GM7TESTING"
+            ReferencedContainer = "container:GM7.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

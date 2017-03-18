@@ -20,6 +20,8 @@ class Prompt: IGE {
     else { kids.insert(choice, at: index) }
   }
   
+  func addKids(choices: [Choice]) { for choice in choices { addKid(choice: choice) }  }
+  
   func removeKid(choice: Choice) {
     guard kids.contains(choice) else { say("rk: choice not found"); return }
     choice.mother = nil
@@ -59,17 +61,35 @@ class Prompt: IGE {
   
   func duplicate() -> Prompt {
     let dupPrompt = Prompt(title: "copy of \(self.name!))")
-    
     return dupPrompt
   }
   
-  func draw(from index: Int = 0) -> Succeeded {
+  func ui_resize() {
+    size = CGSize(width: size.width, height: CGFloat(kids.count * 30))
+  }
+  
+  func ui_stackKids(from index: Int = 0) -> Succeeded {
     guard kids.count > 0            else { say("draw: no kids");        return false }
-    guard (index + 1) <= kids.count else { say("draw: index OOR");      return false }
+    guard index <= (kids.count - 1) else { say("draw: index OOR");      return false }
     guard index >= 0                else { say("draw: negative index"); return false }
 
-    /* do drawing stuff */
+    func stackThem(recursiveIndex: Int) {
+      
+      // Base:
+      if recursiveIndex > (kids.count - 1) { return }
+        // Mover:
+      else {
+        let yPosition = CGFloat(recursiveIndex * 30)
+        kids[recursiveIndex].position.y = yPosition
+        stackThem(recursiveIndex: recursiveIndex + 1)
+      }
+    }
+    
+    stackThem(recursiveIndex: index)
+    
     return true
   }
+  
+  
 }
 

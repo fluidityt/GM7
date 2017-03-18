@@ -9,30 +9,24 @@ import SpriteKit
 class GameScene: SKScene {
   
   private func testMakeShitUp(){
-    
     let
     p1 = Prompt(title: "P1"),
     c1 = Choice(title: "C1"),
     p2 = Prompt(title: "P2"),
     c2 = Choice(title: "C2")
-    
-    p1.draw()
-    
   }
   
   override func didMove(to view: SKView) {
-
+    anchorPoint = CGPoint(x: 0.5, y: 0.5)
+    testMakeShitUp()
   }
-
 }
 
 //
 // MARK: - Touches:
 //
 extension GameScene {
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
-  }
+
 }
 
 //
@@ -40,7 +34,6 @@ extension GameScene {
 //
 extension GameScene {
   override func update(_ currentTime: TimeInterval) {
-    
   }
 }
 
@@ -50,7 +43,7 @@ extension GameScene {
 extension GameScene {
   
   func checkCollisions() {
-    
+    /*
     guard let currentNode = sys.currentNode else {
       print("checkCollision: curNode was nil!")
       return
@@ -70,8 +63,7 @@ extension GameScene {
       }
       
     }
+ */
     // Base case:
   }
 }
-
-
