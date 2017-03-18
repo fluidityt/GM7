@@ -38,6 +38,38 @@
                BlueprintName = "GM7TESTING"
                ReferencedContainer = "container:GM7.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "GameScene">
+               </Test>
+               <Test
+                  Identifier = "GameScene/testMakeShitUp()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_addChildren()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_addChildrenAtIndexPrompt()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_removeKids()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_swapChoice()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_swapPrompt()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_align()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_stackKids1()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_stackKids2()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <AdditionalOptions>

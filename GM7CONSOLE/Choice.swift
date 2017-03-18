@@ -15,6 +15,7 @@ class Choice: IGE {
     
     prompt.mother = self
     kid = prompt
+    ui_align()
   }
   
   func removeKid() {
@@ -57,5 +58,14 @@ class Choice: IGE {
     let dupChoice = Choice(title: "copy of \(self.name!))")
     
     return dupChoice
+  }
+  
+  func ui_align() -> Succeeded {
+    guard let myKid = kid  else { dbg("align(): kid is nil"); return false}
+    myKid.position = position
+    // FIXME: Figure out a cool algo to space this based on .first and .last y value.
+    myKid.position.x += frame.width
+    /**/myKid.ui_stackKids()
+    return true
   }
 }

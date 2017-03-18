@@ -16,8 +16,14 @@ class Prompt: IGE {
     
     choice.mother = self
     
-    if index == -50 { kids.append(choice) }
-    else { kids.insert(choice, at: index) }
+    if index == -50 {
+      kids.append(choice)
+      ui_stackKids(from: kids.count - 1)
+    }
+    else {
+      kids.insert(choice, at: index)
+      ui_stackKids(from: index)
+    }
   }
   
   func addKids(choices: [Choice]) { for choice in choices { addKid(choice: choice) }  }
@@ -79,8 +85,9 @@ class Prompt: IGE {
       if recursiveIndex > (kids.count - 1) { return }
         // Mover:
       else {
-        let yPosition = CGFloat(recursiveIndex * 30)
+        let yPosition = (position.y + CGFloat(recursiveIndex * 30))
         kids[recursiveIndex].position.y = yPosition
+       /**/kids[recursiveIndex].ui_align()
         stackThem(recursiveIndex: recursiveIndex + 1)
       }
     }
@@ -89,7 +96,6 @@ class Prompt: IGE {
     
     return true
   }
-  
-  
+    
 }
 

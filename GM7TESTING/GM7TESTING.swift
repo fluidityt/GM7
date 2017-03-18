@@ -36,6 +36,7 @@ class ParentingTest: XCTestCase {
     newLine()
   }
   
+  // MARK: - Combined:
   func test_addChildren() {
     superPrompt.addKid(choice: choice1)
     XCTAssert(superPrompt.kids.contains(choice1))
@@ -82,18 +83,18 @@ class ParentingTest: XCTestCase {
     
   }
   
-  func test_swapChoice(){
+  func test_stackAndAlign() {
+    choice1.position.x += 500
+    choice1.addKid(prompt: prompt2)
+    XCTAssert(prompt2.position.x == (500 + choice1.frame.width))
+    
+    prompt1.position.y += 250
     prompt1.addKid(choice: choice1)
-    prompt2.addKid(choice: choice2)
-    
-    Choice.swapChoices(choice1: choice1, with: choice2)
-    XCTAssert(choice1.mother === prompt2)
-    XCTAssert(choice2.mother === prompt1)
-    XCTAssert(prompt1.kids.contains(choice2))
-    XCTAssert(prompt2.kids.contains(choice1))
-    
+    XCTAssert(choice1.position.y == 250)
+    XCTAssert(prompt2.position.y == 250)
   }
   
+  // MARK: - Prompt:
   func test_swapPrompt(){
     choice1.addKid(prompt: prompt1)
     choice2.addKid(prompt: prompt2)
@@ -152,5 +153,27 @@ class ParentingTest: XCTestCase {
     XCTAssert(choice1.position.y == 0)
   }
   
+  // MARK: - Choice:
+  func test_swapChoice(){
+    prompt1.addKid(choice: choice1)
+    prompt2.addKid(choice: choice2)
+    
+    Choice.swapChoices(choice1: choice1, with: choice2)
+    XCTAssert(choice1.mother === prompt2)
+    XCTAssert(choice2.mother === prompt1)
+    XCTAssert(prompt1.kids.contains(choice2))
+    XCTAssert(prompt2.kids.contains(choice1))
+  }
+  
+  func test_ui_align() {
+    XCTAssert(choice1.ui_align() == false)
+    
+    choice1.kid = prompt2
+    choice1.position.x += 2000
+    choice1.position.y += 2000
+    choice1.ui_align()
+    XCTAssert(prompt2.position.x == (2000 + choice1.frame.width))
+    XCTAssert(prompt2.position.y == 2000)
+  }
   
 }
