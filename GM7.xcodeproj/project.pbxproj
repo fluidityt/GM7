@@ -54,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitStuff.swift; sourceTree = "<group>"; };
+		4D1D18521E7CECD50020CA84 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
 		4D5FE5871E79DCD800CE9451 /* GM7CONSOLE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GM7CONSOLE; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5FE5921E79DCF800CE9451 /* GM7TESTING.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GM7TESTING.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GM7TESTING.swift; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			children = (
 				4D7828981E776290006C34F6 /* junk */,
 				4D7828861E77625C006C34F6 /* GameScene.swift */,
+				4D1D18521E7CECD50020CA84 /* File.rtf */,
 				4D5FE5A71E79E7D300CE9451 /* Utility.swift */,
 				4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */,
 				4DEF6E421E7B1B5F005E30A3 /* Button.swift */,

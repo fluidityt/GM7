@@ -48,6 +48,7 @@ class Choice: IGE {
     guard let c1Mom = choice1.mother else { dbg("swapChoices: c1 has no mom"); return }
     guard let c2Mom = choice2.mother else { dbg("swapChoices: c2 has no mom"); return }
 
+    // FIXME: not working with subchildren...
     c1Mom.removeKid(choice: choice1)
     c2Mom.removeKid(choice: choice2)
     c1Mom.addKid(choice: choice2)
@@ -61,11 +62,14 @@ class Choice: IGE {
   }
   
   func ui_align() -> Succeeded {
-    guard let myKid = kid  else { dbg("align(): kid is nil"); return false}
-    myKid.position = position
+    // FIXME: Add verbose...
+    guard let myKid = kid  else {/* dbg("align(): kid is nil"); */return false}
+    
     // FIXME: Figure out a cool algo to space this based on .first and .last y value.
-    myKid.position.x += frame.width
-    /**/_=myKid.ui_stackKids()
+    myKid.position = position
+    myKid.position.x += (frame.width + myKid.frame.width)
+    _=myKid.ui_stackKids()
+    
     return true
   }
 }

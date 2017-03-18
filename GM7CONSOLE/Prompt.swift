@@ -24,6 +24,7 @@ class Prompt: IGE {
       kids.insert(choice, at: index)
       _=ui_stackKids(from: index)
     }
+    ui_resize()
   }
   
   func addKids(choices: [Choice]) { for choice in choices { addKid(choice: choice) }  }
@@ -87,6 +88,7 @@ class Prompt: IGE {
       else {
         let yPosition = (position.y + CGFloat(recursiveIndex * 30))
         kids[recursiveIndex].position.y = yPosition
+        kids[recursiveIndex].position.x = position.x
        _=kids[recursiveIndex].ui_align()
         stackThem(recursiveIndex: recursiveIndex + 1)
       }
