@@ -15,7 +15,7 @@ class Choice: IGE {
     
     prompt.mother = self
     kid = prompt
-    ui_align()
+    _=ui_align()
   }
   
   func removeKid() {
@@ -65,7 +65,7 @@ class Choice: IGE {
     myKid.position = position
     // FIXME: Figure out a cool algo to space this based on .first and .last y value.
     myKid.position.x += frame.width
-    /**/myKid.ui_stackKids()
+    /**/_=myKid.ui_stackKids()
     return true
   }
 }

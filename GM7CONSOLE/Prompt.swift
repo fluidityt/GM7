@@ -18,11 +18,11 @@ class Prompt: IGE {
     
     if index == -50 {
       kids.append(choice)
-      ui_stackKids(from: kids.count - 1)
+      _=ui_stackKids(from: kids.count - 1)
     }
     else {
       kids.insert(choice, at: index)
-      ui_stackKids(from: index)
+      _=ui_stackKids(from: index)
     }
   }
   
@@ -87,7 +87,7 @@ class Prompt: IGE {
       else {
         let yPosition = (position.y + CGFloat(recursiveIndex * 30))
         kids[recursiveIndex].position.y = yPosition
-       /**/kids[recursiveIndex].ui_align()
+       _=kids[recursiveIndex].ui_align()
         stackThem(recursiveIndex: recursiveIndex + 1)
       }
     }

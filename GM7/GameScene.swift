@@ -8,17 +8,22 @@ import SpriteKit
 //
 class GameScene: SKScene {
   
-  private func testMakeShitUp(){
+
+  private func tmakeShitUp(){
     let
-    p1 = Prompt(title: "P1"),
-    c1 = Choice(title: "C1"),
-    p2 = Prompt(title: "P2"),
-    c2 = Choice(title: "C2")
+    prompt1 = Prompt(title: "P1"),
+    prompt2 = Prompt(title: "P2"),
+    choice1 = Choice(title: "C1"),
+    choice2 = Choice(title: "C2")
+    prompt1.addKid(choice: choice1)
+    choice1.addKid(prompt: prompt2)
+    prompt2.addKid(choice: choice2)
   }
   
   override func didMove(to view: SKView) {
     anchorPoint = CGPoint(x: 0.5, y: 0.5)
-    testMakeShitUp()
+    print("hi")
+    tmakeShitUp()
   }
 }
 

@@ -31,10 +31,12 @@ class IGE: SKSpriteNode {
     // Test these APs:
     if      thisType.contains("Prompt") {
       size        = sizes.prompt
+      color       = SKColor.green
       anchorPoint = CGPoint(x: 1, y: 0)
     }
     else if thisType.contains("Choice") {
       size        = sizes.choice
+      color       = SKColor.blue
       anchorPoint = CGPoint.zero
     }
     
@@ -45,4 +47,5 @@ class IGE: SKSpriteNode {
   func say(_ text: String) {
     print(name! + " - " + text)
   }
+  
 }

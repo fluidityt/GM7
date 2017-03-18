@@ -171,7 +171,7 @@ class ParentingTest: XCTestCase {
     choice1.kid = prompt2
     choice1.position.x += 2000
     choice1.position.y += 2000
-    choice1.ui_align()
+    _=choice1.ui_align()
     XCTAssert(prompt2.position.x == (2000 + choice1.frame.width))
     XCTAssert(prompt2.position.y == 2000)
   }
