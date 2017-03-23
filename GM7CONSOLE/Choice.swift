@@ -44,15 +44,25 @@ class Choice: IGE {
   }
 
   static func swapChoices(choice1: Choice, with choice2: Choice) {
+    dbg("swapping choices \(choice1.name), \(choice2.name) ")
     guard choice1 !== choice2        else { dbg("swapChoices: c1 == c2")     ; return }
     guard let c1Mom = choice1.mother else { dbg("swapChoices: c1 has no mom"); return }
     guard let c2Mom = choice2.mother else { dbg("swapChoices: c2 has no mom"); return }
 
-    // FIXME: not working with subchildren...
+    // Determine whether we need to remove kid from choice...
+    let c1kid = choice1.kid
+    let c2kid = choice2.kid
+    
+    
     c1Mom.removeKid(choice: choice1)
     c2Mom.removeKid(choice: choice2)
+    choice1.removeKid()
+    choice2.removeKid()
+    
     c1Mom.addKid(choice: choice2)
     c2Mom.addKid(choice: choice1)
+    if c1kid != nil { choice1.addKid(prompt: c1kid!) }
+    if c2kid != nil { choice2.addKid(prompt: c2kid!) }
   }
   
   func duplicate() -> Choice {

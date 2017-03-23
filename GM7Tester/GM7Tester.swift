@@ -1,6 +1,7 @@
 //
 //  GM7TESTING.swift
 
+import SpriteKit
 import XCTest
 
 class ParentingTest: XCTestCase {
@@ -154,7 +155,7 @@ class ParentingTest: XCTestCase {
   }
   
   // MARK: - Choice:
-  func test_swapChoice(){
+  func test_swapChoice1(){
     prompt1.addKid(choice: choice1)
     prompt2.addKid(choice: choice2)
     
@@ -163,6 +164,24 @@ class ParentingTest: XCTestCase {
     XCTAssert(choice2.mother === prompt1)
     XCTAssert(prompt1.kids.contains(choice2))
     XCTAssert(prompt2.kids.contains(choice1))
+  }
+  
+  //FIXME: N O WORK
+  func test_swapChoice2(){
+    prompt1.addKid(choice: choice1)
+    choice1.addKid(prompt: prompt2)
+    prompt2.addKid(choice: choice2)
+
+    
+    prompt1.removeKid(choice: choice1)
+    prompt2.removeKid(choice: choice2)
+    
+
+    prompt1.report()
+    choice1.report()
+    prompt2.report()
+    choice2.report()
+    //Choice.swapChoices(choice1: choice1, with: choice2)
   }
   
   func test_ui_align() {
@@ -174,6 +193,35 @@ class ParentingTest: XCTestCase {
     _=choice1.ui_align()
     XCTAssert(prompt2.position.x == (2000 + choice1.frame.width))
     XCTAssert(prompt2.position.y == 2000)
+  }
+  
+  func testLabel() {
+    
+    var label = SKLabelNode()
+    
+     func tLabel(text: String, desiredSize: CGSize) {
+      
+      label.text = text
+
+      print(label.frame.size)
+      
+        var counter = 0.95
+        while label.frame.width > desiredSize.width || label.frame.height > desiredSize.height {
+          counter -= 0.01
+          label.setScale(CGFloat(counter))
+        }
+
+        counter = 1.0
+        while label.frame.width < desiredSize.width && label.frame.height < desiredSize.height {
+          counter += 0.01
+          label.setScale(CGFloat(counter))
+        }
+
+      print(label.frame.size)
+      
+    }
+    
+    tLabel(text: "heythere", desiredSize: CGSize(width: 100, height: 200))
   }
   
 }

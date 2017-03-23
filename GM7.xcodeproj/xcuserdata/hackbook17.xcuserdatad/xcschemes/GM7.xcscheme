@@ -28,6 +28,48 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D1D18571E7E34070020CA84"
+               BuildableName = "GM7Tester.xctest"
+               BlueprintName = "GM7Tester"
+               ReferencedContainer = "container:GM7.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ParentingTest/test_addChildren()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_addChildrenAtIndexPrompt()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_removeKids()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_stackAndAlign()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_swapChoice1()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_swapChoice2()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_swapPrompt()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_align()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_stackKids1()">
+               </Test>
+               <Test
+                  Identifier = "ParentingTest/test_ui_stackKids2()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

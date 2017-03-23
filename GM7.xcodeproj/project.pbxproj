@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D1D184F1E7CE1100020CA84 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
+		4D0214D11E835457006B2E5A /* Labby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0214D01E835457006B2E5A /* Labby.swift */; };
+		4D0214D31E835BFF006B2E5A /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0214D21E835BFF006B2E5A /* Cover.swift */; };
+		4D0214D41E835BFF006B2E5A /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0214D21E835BFF006B2E5A /* Cover.swift */; };
 		4D1D18511E7CE1460020CA84 /* UIKitStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */; };
-		4D5FE5951E79DCF800CE9451 /* GM7TESTING.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */; };
-		4D5FE5A81E79E7D300CE9451 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
-		4D5FE5A91E79E7D300CE9451 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
+		4D1D185B1E7E34070020CA84 /* GM7Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D185A1E7E34070020CA84 /* GM7Tester.swift */; };
 		4D7828811E77625C006C34F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828801E77625C006C34F6 /* AppDelegate.swift */; };
-		4D7828831E77625C006C34F6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D7828821E77625C006C34F6 /* GameScene.sks */; };
-		4D7828851E77625C006C34F6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D7828841E77625C006C34F6 /* Actions.sks */; };
 		4D7828871E77625C006C34F6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
 		4D7828891E77625C006C34F6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828881E77625C006C34F6 /* GameViewController.swift */; };
 		4D78288C1E77625C006C34F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288A1E77625C006C34F6 /* Main.storyboard */; };
@@ -22,43 +20,38 @@
 		4D7828911E77625C006C34F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D78288F1E77625C006C34F6 /* LaunchScreen.storyboard */; };
 		4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289B1E7762A6006C34F6 /* handleTouch.swift */; };
 		4D78289E1E776539006C34F6 /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D78289D1E776539006C34F6 /* ui.swift */; };
-		4D95CF691E7B194000EB5A0E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
-		4D95CF6A1E7B194100EB5A0E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
+		4DE0E50E1E7E351F0032F506 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7828861E77625C006C34F6 /* GameScene.swift */; };
+		4DE0E50F1E7E351F0032F506 /* UIKitStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */; };
+		4DE0E5101E7E351F0032F506 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
+		4DE0E5111E7E351F0032F506 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
+		4DE0E5121E7E351F0032F506 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
+		4DE0E5131E7E351F0032F506 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
+		4DE0E5141E7E351F0032F506 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
 		4DEF6E491E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
-		4DEF6E4A1E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
-		4DEF6E4B1E7B1B5F005E30A3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E421E7B1B5F005E30A3 /* Button.swift */; };
 		4DEF6E4C1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
-		4DEF6E4D1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
-		4DEF6E4E1E7B1B5F005E30A3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E431E7B1B5F005E30A3 /* Choice.swift */; };
 		4DEF6E4F1E7B1B5F005E30A3 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
-		4DEF6E501E7B1B5F005E30A3 /* IGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E441E7B1B5F005E30A3 /* IGE.swift */; };
-		4DEF6E531E7B1B5F005E30A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E451E7B1B5F005E30A3 /* main.swift */; };
-		4DEF6E541E7B1B5F005E30A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E451E7B1B5F005E30A3 /* main.swift */; };
 		4DEF6E551E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
-		4DEF6E561E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
-		4DEF6E571E7B1B5F005E30A3 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */; };
 		4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE5A71E79E7D300CE9451 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4D5FE5851E79DCD800CE9451 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
+/* Begin PBXContainerItemProxy section */
+		4D1D185D1E7E34070020CA84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7828751E77625C006C34F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D78287C1E77625C006C34F6;
+			remoteInfo = GM7;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0214D01E835457006B2E5A /* Labby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labby.swift; sourceTree = "<group>"; };
+		4D0214D21E835BFF006B2E5A /* Cover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
 		4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitStuff.swift; sourceTree = "<group>"; };
 		4D1D18521E7CECD50020CA84 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
-		4D5FE5871E79DCD800CE9451 /* GM7CONSOLE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GM7CONSOLE; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FE5921E79DCF800CE9451 /* GM7TESTING.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GM7TESTING.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GM7TESTING.swift; sourceTree = "<group>"; };
-		4D5FE5961E79DCF800CE9451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1D18581E7E34070020CA84 /* GM7Tester.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GM7Tester.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1D185A1E7E34070020CA84 /* GM7Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GM7Tester.swift; path = GM7Tester/GM7Tester.swift; sourceTree = SOURCE_ROOT; };
+		4D1D185C1E7E34070020CA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FE5A71E79E7D300CE9451 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = GM7CONSOLE/Utility.swift; sourceTree = SOURCE_ROOT; };
 		4D78287D1E77625C006C34F6 /* GM7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GM7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7828801E77625C006C34F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,19 +68,11 @@
 		4DEF6E421E7B1B5F005E30A3 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Button.swift; path = GM7CONSOLE/Button.swift; sourceTree = SOURCE_ROOT; };
 		4DEF6E431E7B1B5F005E30A3 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Choice.swift; path = GM7CONSOLE/Choice.swift; sourceTree = SOURCE_ROOT; };
 		4DEF6E441E7B1B5F005E30A3 /* IGE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IGE.swift; path = GM7CONSOLE/IGE.swift; sourceTree = SOURCE_ROOT; };
-		4DEF6E451E7B1B5F005E30A3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4DEF6E461E7B1B5F005E30A3 /* Prompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prompt.swift; path = GM7CONSOLE/Prompt.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D5FE5841E79DCD800CE9451 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D5FE58F1E79DCF800CE9451 /* Frameworks */ = {
+		4D1D18551E7E34070020CA84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,38 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D1D184E1E7CE00C0020CA84 /* New Group */ = {
+		4D1D18531E7CEDFF0020CA84 /* classe */ = {
 			isa = PBXGroup;
 			children = (
+				4D0214D01E835457006B2E5A /* Labby.swift */,
+				4D0214D21E835BFF006B2E5A /* Cover.swift */,
 			);
-			name = "New Group";
+			name = classe;
 			sourceTree = "<group>";
 		};
-		4D5FE5881E79DCD800CE9451 /* GM7CONSOLE */ = {
+		4D1D18591E7E34070020CA84 /* GM7Tester */ = {
 			isa = PBXGroup;
 			children = (
-				4D1D184E1E7CE00C0020CA84 /* New Group */,
-				4DEF6E451E7B1B5F005E30A3 /* main.swift */,
+				4D1D185C1E7E34070020CA84 /* Info.plist */,
 			);
-			path = GM7CONSOLE;
-			sourceTree = "<group>";
-		};
-		4D5FE5931E79DCF800CE9451 /* GM7TESTING */ = {
-			isa = PBXGroup;
-			children = (
-				4D5FE5941E79DCF800CE9451 /* GM7TESTING.swift */,
-				4D5FE5961E79DCF800CE9451 /* Info.plist */,
-			);
-			path = GM7TESTING;
+			path = GM7Tester;
 			sourceTree = "<group>";
 		};
 		4D7828741E77625C006C34F6 = {
 			isa = PBXGroup;
 			children = (
 				4D78287F1E77625C006C34F6 /* GM7 */,
-				4D5FE5881E79DCD800CE9451 /* GM7CONSOLE */,
-				4D5FE5931E79DCF800CE9451 /* GM7TESTING */,
+				4D1D18591E7E34070020CA84 /* GM7Tester */,
 				4D78287E1E77625C006C34F6 /* Products */,
+				4D7828981E776290006C34F6 /* junk */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,8 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4D78287D1E77625C006C34F6 /* GM7.app */,
-				4D5FE5871E79DCD800CE9451 /* GM7CONSOLE */,
-				4D5FE5921E79DCF800CE9451 /* GM7TESTING.xctest */,
+				4D1D18581E7E34070020CA84 /* GM7Tester.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,11 +128,12 @@
 		4D78287F1E77625C006C34F6 /* GM7 */ = {
 			isa = PBXGroup;
 			children = (
-				4D7828981E776290006C34F6 /* junk */,
-				4D7828861E77625C006C34F6 /* GameScene.swift */,
 				4D1D18521E7CECD50020CA84 /* File.rtf */,
-				4D5FE5A71E79E7D300CE9451 /* Utility.swift */,
+				4D7828861E77625C006C34F6 /* GameScene.swift */,
 				4D1D18501E7CE1450020CA84 /* UIKitStuff.swift */,
+				4D1D185A1E7E34070020CA84 /* GM7Tester.swift */,
+				4D1D18531E7CEDFF0020CA84 /* classe */,
+				4D5FE5A71E79E7D300CE9451 /* Utility.swift */,
 				4DEF6E421E7B1B5F005E30A3 /* Button.swift */,
 				4DEF6E431E7B1B5F005E30A3 /* Choice.swift */,
 				4DEF6E441E7B1B5F005E30A3 /* IGE.swift */,
@@ -168,8 +145,8 @@
 		4D7828981E776290006C34F6 /* junk */ = {
 			isa = PBXGroup;
 			children = (
-				4D78289D1E776539006C34F6 /* ui.swift */,
 				4D78289B1E7762A6006C34F6 /* handleTouch.swift */,
+				4D78289D1E776539006C34F6 /* ui.swift */,
 				4D7828801E77625C006C34F6 /* AppDelegate.swift */,
 				4D7828821E77625C006C34F6 /* GameScene.sks */,
 				4D7828841E77625C006C34F6 /* Actions.sks */,
@@ -180,43 +157,28 @@
 				4D7828921E77625C006C34F6 /* Info.plist */,
 			);
 			name = junk;
+			path = GM7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4D5FE5861E79DCD800CE9451 /* GM7CONSOLE */ = {
+		4D1D18571E7E34070020CA84 /* GM7Tester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D5FE58D1E79DCD800CE9451 /* Build configuration list for PBXNativeTarget "GM7CONSOLE" */;
+			buildConfigurationList = 4D1D185F1E7E34070020CA84 /* Build configuration list for PBXNativeTarget "GM7Tester" */;
 			buildPhases = (
-				4D5FE5831E79DCD800CE9451 /* Sources */,
-				4D5FE5841E79DCD800CE9451 /* Frameworks */,
-				4D5FE5851E79DCD800CE9451 /* CopyFiles */,
+				4D1D18541E7E34070020CA84 /* Sources */,
+				4D1D18551E7E34070020CA84 /* Frameworks */,
+				4D1D18561E7E34070020CA84 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D1D185E1E7E34070020CA84 /* PBXTargetDependency */,
 			);
-			name = GM7CONSOLE;
-			productName = GM7CONSOLE;
-			productReference = 4D5FE5871E79DCD800CE9451 /* GM7CONSOLE */;
-			productType = "com.apple.product-type.tool";
-		};
-		4D5FE5911E79DCF800CE9451 /* GM7TESTING */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D5FE5971E79DCF800CE9451 /* Build configuration list for PBXNativeTarget "GM7TESTING" */;
-			buildPhases = (
-				4D5FE58E1E79DCF800CE9451 /* Sources */,
-				4D5FE58F1E79DCF800CE9451 /* Frameworks */,
-				4D5FE5901E79DCF800CE9451 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GM7TESTING;
-			productName = GM7TESTING;
-			productReference = 4D5FE5921E79DCF800CE9451 /* GM7TESTING.xctest */;
+			name = GM7Tester;
+			productName = GM7Tester;
+			productReference = 4D1D18581E7E34070020CA84 /* GM7Tester.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4D78287C1E77625C006C34F6 /* GM7 */ = {
@@ -246,13 +208,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "justin fluidity";
 				TargetAttributes = {
-					4D5FE5861E79DCD800CE9451 = {
+					4D1D18571E7E34070020CA84 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
-					};
-					4D5FE5911E79DCF800CE9451 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						TestTargetID = 4D78287C1E77625C006C34F6;
 					};
 					4D78287C1E77625C006C34F6 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -274,14 +233,13 @@
 			projectRoot = "";
 			targets = (
 				4D78287C1E77625C006C34F6 /* GM7 */,
-				4D5FE5861E79DCD800CE9451 /* GM7CONSOLE */,
-				4D5FE5911E79DCF800CE9451 /* GM7TESTING */,
+				4D1D18571E7E34070020CA84 /* GM7Tester */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4D5FE5901E79DCF800CE9451 /* Resources */ = {
+		4D1D18561E7E34070020CA84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,42 +251,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D78288C1E77625C006C34F6 /* Main.storyboard in Resources */,
-				4D7828831E77625C006C34F6 /* GameScene.sks in Resources */,
 				4D78288E1E77625C006C34F6 /* Assets.xcassets in Resources */,
 				4D7828911E77625C006C34F6 /* LaunchScreen.storyboard in Resources */,
-				4D7828851E77625C006C34F6 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D5FE5831E79DCD800CE9451 /* Sources */ = {
+		4D1D18541E7E34070020CA84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D95CF691E7B194000EB5A0E /* GameScene.swift in Sources */,
-				4DEF6E561E7B1B5F005E30A3 /* Prompt.swift in Sources */,
-				4DEF6E531E7B1B5F005E30A3 /* main.swift in Sources */,
-				4DEF6E501E7B1B5F005E30A3 /* IGE.swift in Sources */,
-				4DEF6E4D1E7B1B5F005E30A3 /* Choice.swift in Sources */,
-				4D5FE5A81E79E7D300CE9451 /* Utility.swift in Sources */,
-				4DEF6E4A1E7B1B5F005E30A3 /* Button.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D5FE58E1E79DCF800CE9451 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D95CF6A1E7B194100EB5A0E /* GameScene.swift in Sources */,
-				4D1D184F1E7CE1100020CA84 /* IGE.swift in Sources */,
-				4DEF6E571E7B1B5F005E30A3 /* Prompt.swift in Sources */,
-				4DEF6E541E7B1B5F005E30A3 /* main.swift in Sources */,
-				4DEF6E4E1E7B1B5F005E30A3 /* Choice.swift in Sources */,
-				4D5FE5A91E79E7D300CE9451 /* Utility.swift in Sources */,
-				4D5FE5951E79DCF800CE9451 /* GM7TESTING.swift in Sources */,
-				4DEF6E4B1E7B1B5F005E30A3 /* Button.swift in Sources */,
+				4DE0E5121E7E351F0032F506 /* Choice.swift in Sources */,
+				4D0214D41E835BFF006B2E5A /* Cover.swift in Sources */,
+				4DE0E5141E7E351F0032F506 /* Prompt.swift in Sources */,
+				4DE0E5111E7E351F0032F506 /* Button.swift in Sources */,
+				4DE0E5101E7E351F0032F506 /* Utility.swift in Sources */,
+				4DE0E50F1E7E351F0032F506 /* UIKitStuff.swift in Sources */,
+				4DE0E50E1E7E351F0032F506 /* GameScene.swift in Sources */,
+				4D1D185B1E7E34070020CA84 /* GM7Tester.swift in Sources */,
+				4DE0E5131E7E351F0032F506 /* IGE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,12 +280,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEF6E551E7B1B5F005E30A3 /* Prompt.swift in Sources */,
+				4D0214D11E835457006B2E5A /* Labby.swift in Sources */,
 				4DEF6E4F1E7B1B5F005E30A3 /* IGE.swift in Sources */,
 				4D78289C1E7762A6006C34F6 /* handleTouch.swift in Sources */,
 				4DFA2BFD1E7A31A10071A8B8 /* Utility.swift in Sources */,
 				4D78289E1E776539006C34F6 /* ui.swift in Sources */,
 				4D7828871E77625C006C34F6 /* GameScene.swift in Sources */,
 				4DEF6E4C1E7B1B5F005E30A3 /* Choice.swift in Sources */,
+				4D0214D31E835BFF006B2E5A /* Cover.swift in Sources */,
 				4D7828891E77625C006C34F6 /* GameViewController.swift in Sources */,
 				4DEF6E491E7B1B5F005E30A3 /* Button.swift in Sources */,
 				4D7828811E77625C006C34F6 /* AppDelegate.swift in Sources */,
@@ -351,6 +296,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D1D185E1E7E34070020CA84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D78287C1E77625C006C34F6 /* GM7 */;
+			targetProxy = 4D1D185D1E7E34070020CA84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D78288A1E77625C006C34F6 /* Main.storyboard */ = {
@@ -372,55 +325,29 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4D5FE58B1E79DCD800CE9451 /* Debug */ = {
+		4D1D18601E7E34070020CA84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GM7Tester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zigg.GM7Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GM7.app/GM7";
 			};
 			name = Debug;
 		};
-		4D5FE58C1E79DCD800CE9451 /* Release */ = {
+		4D1D18611E7E34070020CA84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GM7Tester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zigg.GM7Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		4D5FE5981E79DCF800CE9451 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = GM7TESTING/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = zigg.GM7TESTING;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		4D5FE5991E79DCF800CE9451 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = GM7TESTING/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = zigg.GM7TESTING;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GM7.app/GM7";
 			};
 			name = Release;
 		};
@@ -546,20 +473,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D5FE58D1E79DCD800CE9451 /* Build configuration list for PBXNativeTarget "GM7CONSOLE" */ = {
+		4D1D185F1E7E34070020CA84 /* Build configuration list for PBXNativeTarget "GM7Tester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D5FE58B1E79DCD800CE9451 /* Debug */,
-				4D5FE58C1E79DCD800CE9451 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D5FE5971E79DCF800CE9451 /* Build configuration list for PBXNativeTarget "GM7TESTING" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D5FE5981E79DCF800CE9451 /* Debug */,
-				4D5FE5991E79DCF800CE9451 /* Release */,
+				4D1D18601E7E34070020CA84 /* Debug */,
+				4D1D18611E7E34070020CA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

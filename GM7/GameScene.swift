@@ -7,10 +7,13 @@ import SpriteKit
 // MARK: - DMV:
 //
 class GameScene: SKScene {
- var
+  
+  var
   prompt1:Prompt?,  prompt2:Prompt?,
   choice1:Choice?,  choice2:Choice?,
   choice3:Choice?,  choice4:Choice?
+  
+  var label: SKLabelNode = SKLabelNode()
   
   private func reset() {
     prompt1 = Prompt(title: "P1");    prompt2 = Prompt(title: "P2")
@@ -29,14 +32,16 @@ class GameScene: SKScene {
     tmakeShitUp()
     choice1?.color = .cyan
     choice2?.color = .darkGray
-    Choice.swapChoices(choice1: choice1!, with: choice2!)
+    
   }
-  
   
   override func didMove(to view: SKView) {
     anchorPoint = CGPoint(x: 0.5, y: 0.5)
     print("hi")
     tSwap()
+    
+    cover(node: prompt1!)
+
   }
 }
 
@@ -45,12 +50,17 @@ class GameScene: SKScene {
 //
 extension GameScene {
 
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    // Choice.swapChoices(choice1: choice1!, with: choice2!)
+    
+  }
 }
 
 //
 // MARK: - Update:
 //
 extension GameScene {
+  
   override func update(_ currentTime: TimeInterval) {
   }
 }

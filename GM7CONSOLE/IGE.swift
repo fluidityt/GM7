@@ -13,7 +13,7 @@ class IGE: SKSpriteNode {
   
   override func addChild(_ node: SKNode) {
     dbg("did you mean to call .addChild?")
-    addChild(node)
+    super.addChild(node)
   }
   
   override var children: [SKNode] {
